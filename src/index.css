@@ -9,7 +9,7 @@ body{
     color: black;
     margin: 0;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 13px;
 
 }
 
@@ -27,7 +27,7 @@ button {
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     transition: all 250ms;
     overflow: hidden;
-    font-size: 18px;
+    font-size: 13px;
    }
    
    button::before {
@@ -40,11 +40,12 @@ button {
     -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     transition: all 250ms;
-    font-size: 18px;
+    font-size: 13px;
    }
    
    button:hover {
     color: #e1e0e0;
+
    }
    
    button:hover::before {
@@ -53,7 +54,7 @@ button {
 table{
     background-color: #ffffff;
     opacity: 0.7;
-    font-size: 15px;
+    font-size: 13px;
 }
 
   .center {
@@ -73,7 +74,6 @@ table{
     bottom: 0;
     font-size: 15px;
   }
-
 
   h1 {
     cursor: default;
@@ -106,8 +106,8 @@ table{
   }
 
   .form-control{
-    font-size: 16px;
-    padding: 1.5rem 0.75rem;
+    font-size: 15px;
+    padding: 1.1rem;
   }
 
 
@@ -115,10 +115,10 @@ table{
 /* The switch - the box around the slider */
 .switch {
   /* --moon-mask: ; */
-   font-size: 17px;
+   font-size: 12px;
    position: relative;
    display: inline-block;
-   width: 3.5em;
+   width: 5.5em;
    height: 2em;
   }
   
@@ -137,8 +137,8 @@ table{
    left: 0;
    right: 0;
    bottom: 0;
-   background-color: #f4f4f5;
-   transition: .4s;
+   background-color: #000000;
+   transition: .6s;
    border-radius: 30px;
   }
   
@@ -148,19 +148,19 @@ table{
    height: 1.4em;
    width: 1.4em;
    border-radius: 20px;
-   left: 0.3em;
+   left: 0.4em;
    bottom: 0.3em;
-   background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+   background: linear-gradient(40deg,#d66f0f,#ff8c00 70%);
    ;
-   transition: .4s;
+   transition: .6s;
   }
   
   input:checked + .slider {
-   background-color: #6fff5c;
+   background-color: #36ee1e;
   }
   
   input:checked + .slider:before {
-   transform: translateX(1.5em);
-   background: #6fff5c;
-   box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -5px 0 0 #a3dafb;
+   transform: translateX(3.5em);
+   background: #0e912b;
+   box-shadow: inset -3px -2px 5px -2px #14ff27, inset -10px -5px 0 0 #1dff4e;
   }
