@@ -10,16 +10,14 @@ export default function Form(props) {
     const [state, setState] = useState(item);
     const { group } = props;
 
-    
-    
     const onAdd = async (event) => {
-      const nombre = document.getElementById("tarea");
+      const nombreTarea = document.getElementById("tarea");
       /*Validación para nombres de tareas*/
-        if(!nombre.value)
+        if(!nombreTarea.value)
       {
-        nombre.focus();
+        nombreTarea.focus();
         return false;
-      }else if(nombre.value){
+      }else if(nombreTarea.value){
 
         const request = {
         name: state.name,
@@ -32,7 +30,7 @@ export default function Form(props) {
         const todo = await api.todo.add(request);
         dispatch({ type: "add-item", item: todo });
         setState({ name: "" });
-        form.current.reset();
+       form.current.reset();
 
       }catch (error){
         console.log(error)
@@ -42,13 +40,13 @@ export default function Form(props) {
   }
   
     const onEdit = async (event) => {
-      const nombre = document.getElementById("tarea");
+      const nombreTarea = document.getElementById("tarea");
       /*Validación para nombre de proyecto*/
-      if(!nombre.value)
+      if(!nombreTarea.value)
     {
-      nombre.focus();
+      nombreTarea.focus();
       return false;
-    }else if(nombre.value){
+    }else if(nombreTarea.value){
 
       const request = {
         name: state.name,
@@ -69,12 +67,10 @@ export default function Form(props) {
           return true;
         } 
 
-  
     return (
         <form className="container">
           <div className="row">
             <input
-                  required="required" 
                   className="form-control form-control-sm col-10"
                   type="text"
                   name="name"
@@ -85,16 +81,16 @@ export default function Form(props) {
                     setState({ ...state, name: event.target.value })
                   }} ></input>
             {item.id && item.groupListId === group && 
-              <button class="btn btn-warning btn-sm col-2"  onClick={onEdit}>
+              <button className="btn btn-warning btn-sm col-2"  onClick={onEdit}>
                 Actualizar tarea
               </button>
             }
             {item.id && item.groupListId !== group && 
-              <button class="btn btn-success btn-sm col-2" onClick={onAdd}>
+              <button className="btn btn-success btn-sm col-2" onClick={onAdd}>
                 Crear tarea
               </button>
             }
-            {!item.id && <button id="btn" class="btn btn-success btn-sm col-2" onClick={onAdd}>
+            {!item.id && <button id="btn" className="btn btn-success btn-sm col-2" onClick={onAdd}>
               Crear tarea
               </button>
             }

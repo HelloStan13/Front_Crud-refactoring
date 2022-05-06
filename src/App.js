@@ -15,7 +15,6 @@ function App() {
     </div>
     <Footer />
   </StoreProvider>
- 
 }
 
 export default App;

@@ -39,7 +39,7 @@ export default function FormList() {
     }     
   
     const onEdit = async (event) => {
-      event.preventDefault();
+      //event.preventDefault();
   
       const request = {
         name: state.name,
@@ -63,7 +63,7 @@ export default function FormList() {
 
     return (
         <form className="container">
-            <img src="https://webassets.mongodb.com/_com_assets/cms/logo_baja-9r83aqmpo0.png" alt="Sofka" class="center"/>
+            <img src="https://webassets.mongodb.com/_com_assets/cms/logo_baja-9r83aqmpo0.png" alt="Sofka" className='center'/>
             <br></br>
             <h2 className='center'>Gestión de Proyectos</h2>
             <br></br>
@@ -81,7 +81,7 @@ export default function FormList() {
                   }} ></input>
             {item.id && <button className='btn btn-primary' onClick={() => { onEdit();  }}>Actualizar</button>}
             {!item.id && 
-              <button class="btn btn-success btn-sm col-2" onClick={() => { onAdd();  }}>
+              <button className="btn btn-success btn-sm col-2" onClick={() => { onAdd();  }}>
                 Crear proyecto
               </button>}
           </div>
