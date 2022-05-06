@@ -37,7 +37,7 @@ https://user-images.githubusercontent.com/92740455/167166122-0ee63772-8d8a-40fd-
 ![react 6](https://user-images.githubusercontent.com/92740455/167170425-9f2209d5-0ab4-442a-adcb-1ed1e5d819a7.jpg)
 
 ### Check de tareas completadas
-![react 7](https://user-images.githubusercontent.com/92740455/167170484-04ad28eb-b0f7-4067-be6d-91bb14c5fce0.jpg)
+![react 1](https://user-images.githubusercontent.com/92740455/167207617-47382bc3-9435-45b0-b8f2-806e54e7d473.jpg)
 
 ### Creación de Segundo proyecto
 ![react 4](https://user-images.githubusercontent.com/92740455/167170297-9b678c58-643c-4c1b-ba22-495a833e38a6.jpg)
