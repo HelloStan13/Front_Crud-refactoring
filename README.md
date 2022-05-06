@@ -46,6 +46,6 @@ https://user-images.githubusercontent.com/92740455/167166122-0ee63772-8d8a-40fd-
 #### Recuerda ejecutar npm install para luego ejecutar la App
 
 ## Video Explicación 
-[VIDEO](https://youtu.be/b9IWCRAQ3jM)
+[VIDEO Kata Crud Adryan](https://youtu.be/b9IWCRAQ3jM)
 
 ## con ❤️ por  [Adryan Ynfante](https://github.com/HelloStan13)🍿
