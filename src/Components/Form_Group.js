@@ -12,6 +12,7 @@ export default function FormList() {
   
     const onAdd = async (event) => {
       const nombre = document.getElementById("name");
+      /*Validación para nombre de proyecto*/
       if(!nombre.value)
     {
       nombre.focus();
@@ -30,12 +31,10 @@ export default function FormList() {
         setState({ name: "" });
         form.current.reset();
         
-  
       }catch (error){
         console.log(error)
       }    
     }
-
       return true;
     }     
   
@@ -60,18 +59,6 @@ export default function FormList() {
         }
     }
 
-    function validarForm(){
-      const nombre = document.getElementById("name");
-          if(!nombre.value)
-        {
-          alert("El campo nombre es requerido");
-          nombre.focus();
-          return false;
-        }else if(nombre.value){
-          return true;
-        }
-
-    }
 
 
     return (

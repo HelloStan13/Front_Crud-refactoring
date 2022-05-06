@@ -13,10 +13,15 @@ export default function Form(props) {
     
     
     const onAdd = async (event) => {
-      event.preventDefault();
-      
-  
-      const request = {
+      const nombre = document.getElementById("tarea");
+      /*Validación para nombres de tareas*/
+        if(!nombre.value)
+      {
+        nombre.focus();
+        return false;
+      }else if(nombre.value){
+
+        const request = {
         name: state.name,
         id: null,
         completed: false,
@@ -33,19 +38,25 @@ export default function Form(props) {
         console.log(error)
       }
     }
+    return true;
+  }
   
     const onEdit = async (event) => {
-      event.preventDefault();
-  
+      const nombre = document.getElementById("tarea");
+      /*Validación para nombre de proyecto*/
+      if(!nombre.value)
+    {
+      nombre.focus();
+      return false;
+    }else if(nombre.value){
+
       const request = {
         name: state.name,
         id: item.id,
         isCompleted: item.isCompleted,
         groupListId: group
       };
-
       console.log(request);
-  
         try {
             const todo = await api.todo.edit(request);
             dispatch({ type: "update-item", item: todo });
@@ -53,8 +64,10 @@ export default function Form(props) {
             form.current.reset();
         } catch(error) {
             console.log(error);
+          }    
         }
-    }
+          return true;
+        } 
 
   
     return (
@@ -65,6 +78,7 @@ export default function Form(props) {
                   className="form-control form-control-sm col-10"
                   type="text"
                   name="name"
+                  id='tarea'
                   placeholder="Tareas de proyecto"
                   defaultValue={item.groupListId === group ? item.name : ''}
                   onChange={(event) => {
