@@ -4,15 +4,17 @@ import api from '../API/api';
 
 
 export default function Form(props) {
-    const formRef = useRef(null);
+    const form = useRef(null);
     const { dispatch, state: { todo } } = useContext(Store);
     const item = todo.item;
     const [state, setState] = useState(item);
     const { group } = props;
 
     
+    
     const onAdd = async (event) => {
       event.preventDefault();
+      
   
       const request = {
         name: state.name,
@@ -25,7 +27,7 @@ export default function Form(props) {
         const todo = await api.todo.add(request);
         dispatch({ type: "add-item", item: todo });
         setState({ name: "" });
-        formRef.current.reset();
+        form.current.reset();
 
       }catch (error){
         console.log(error)
@@ -48,16 +50,18 @@ export default function Form(props) {
             const todo = await api.todo.edit(request);
             dispatch({ type: "update-item", item: todo });
             setState({ name: "" });
-            formRef.current.reset();
+            form.current.reset();
         } catch(error) {
             console.log(error);
         }
     }
+
   
     return (
-        <form ref={formRef} className="container">
+        <form className="container">
           <div className="row">
             <input
+                  required="required" 
                   className="form-control form-control-sm col-10"
                   type="text"
                   name="name"
@@ -76,10 +80,11 @@ export default function Form(props) {
                 Crear tarea
               </button>
             }
-            {!item.id && <button class="btn btn-success btn-sm col-2" onClick={onAdd}>
+            {!item.id && <button id="btn" class="btn btn-success btn-sm col-2" onClick={onAdd}>
               Crear tarea
               </button>
             }
+            
           </div>
         </form>
     );
