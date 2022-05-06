@@ -5,32 +5,41 @@ import api from '../API/api';
 
 
 export default function FormList() {
-    const formRef = useRef(null);
+    const form = useRef(null);
     const { dispatch, state: { groupList } } = useContext(Store);
     const item = groupList.item;
     const [state, setState] = useState(item);
   
     const onAdd = async (event) => {
-      event.preventDefault();
-  
+      const nombre = document.getElementById("name");
+      /*Validación para nombre de proyecto*/
+      if(!nombre.value)
+    {
+      nombre.focus();
+      return false;
+    }else if(nombre.value){
+
+      
       const request = {
         name: state.name,
         id: null
       };
-
+      
       try {
         const groupList = await api.grouplist.addGroupList(request);
         dispatch({ type: "add-item-group", item: groupList });
         setState({ name: "" });
-        formRef.current.reset();
-
+        form.current.reset();
+        
       }catch (error){
         console.log(error)
-      }
+      }    
     }
+      return true;
+    }     
   
     const onEdit = async (event) => {
-      event.preventDefault();
+      //event.preventDefault();
   
       const request = {
         name: state.name,
@@ -42,25 +51,19 @@ export default function FormList() {
             const todo = await api.todo.edit(request);
             dispatch({ type: "update-item", item: todo });
             setState({ name: "" });
-            formRef.current.reset();
+            
+            form.current.reset();
+            
         } catch(error) {
             console.log(error);
         }
     }
-    
-    // const validateField = field => {
-    //   const errors = {};
-    //     if (field.value === '') {
-    //       errors[field.name] = field.emptyValue
-    //     } else if (field.value.length < field.min) {
-    //       errors[field.name] = field.shortValue || `Debe tener un mínimo de ${field.min} cáracteres`
-    //     }
-    //   }
+
 
 
     return (
-        <form ref={formRef} className="container">
-            <img src="https://webassets.mongodb.com/_com_assets/cms/logo_baja-9r83aqmpo0.png" alt="Sofka" class="center"/>
+        <form className="container">
+            <img src="https://webassets.mongodb.com/_com_assets/cms/logo_baja-9r83aqmpo0.png" alt="Sofka" className='center'/>
             <br></br>
             <h2 className='center'>Gestión de Proyectos</h2>
             <br></br>
@@ -69,15 +72,16 @@ export default function FormList() {
                   className="form-control col-10"
                   type="text"
                   name="name"
+                  id='name'
+                  required="required" 
                   placeholder="Nombre de proyecto"
-                  required
                   defaultValue={item.name}
                   onChange={(event) => {
                   setState({ ...state, name: event.target.value })
                   }} ></input>
-            {item.id && <button className='btn btn-primary' onClick={onEdit}>Actualizar</button>}
+            {item.id && <button className='btn btn-primary' onClick={() => { onEdit();  }}>Actualizar</button>}
             {!item.id && 
-              <button class="btn btn-success btn-sm col-2" onClick={onAdd}>
+              <button className="btn btn-success btn-sm col-2" onClick={() => { onAdd();  }}>
                 Crear proyecto
               </button>}
           </div>

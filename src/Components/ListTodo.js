@@ -50,7 +50,7 @@ const ListTodo = (props) => {
     <table className='table'>
       <thead>
         <tr>
-          <td>ID</td>
+          
           <td>Tarea</td>
           <td>¿Completado?</td>
           <td>Acciones</td>
@@ -59,7 +59,7 @@ const ListTodo = (props) => {
       <tbody>
         {currentList.map((todo) => {
           return <tr key={todo.id} style={todo.completed ? decorationDone : {}}>
-            <td>{todo.id}</td>
+            
             <td>{todo.name}</td>
             <td>
               <input type="checkbox" id='decoration' defaultChecked={todo.completed} onChange={(event) => onChange(event, todo)}>
