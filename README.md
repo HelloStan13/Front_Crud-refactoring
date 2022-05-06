@@ -1,11 +1,12 @@
 # Front_Crud-refactoring
-Crud Kata Front
+## Crud Kata Front
 
 ## Repositorio Backend
 https://github.com/HelloStan13/BackEnd_Crud-refactoring.git
 
 ## Construido con 🛠️
 - React JS
+- Bootstrap
 - Spring Boot App / Intellij
 
 ## Funcionamiento
@@ -32,6 +33,10 @@ https://user-images.githubusercontent.com/92740455/167166122-0ee63772-8d8a-40fd-
 ### Creación de Segundo proyecto
 ![react 4](https://user-images.githubusercontent.com/92740455/167170297-9b678c58-643c-4c1b-ba22-495a833e38a6.jpg)
 
+### Recuerda ejecutar npm install para luego ejecutar la App
+Clona el repositorio
+```plain
+git clone https://github.com/HelloStan13/Front_Crud-refactoring.git
+```
 
-
-## con ❤️ por  [Adryan Ynfante](https://github.com/HelloStan13)
+## con ❤️ por  [Adryan Ynfante](https://github.com/HelloStan13)🍿
