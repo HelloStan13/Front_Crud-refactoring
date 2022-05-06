@@ -1,8 +1,17 @@
-# --------------------------Front_Crud-refactoring--------------------------
-## Crud Kata Front
+# --------------------------Front Crud refactoring--------------------------
+## Crud Kata (Proyectos y Tareas)
 
-## Repositorio Backend
-https://github.com/HelloStan13/BackEnd_Crud-refactoring.git
+## Clona
+Repositorio Front
+```plain
+git clone https://github.com/HelloStan13/Front_Crud-refactoring.git
+```
+
+Repositorio Back
+```plain
+git clone https://github.com/HelloStan13/BackEnd_Crud-refactoring.git
+```
+
 
 ## Construido con 🛠️
 - React JS
@@ -34,9 +43,6 @@ https://user-images.githubusercontent.com/92740455/167166122-0ee63772-8d8a-40fd-
 ![react 4](https://user-images.githubusercontent.com/92740455/167170297-9b678c58-643c-4c1b-ba22-495a833e38a6.jpg)
 
 ### Recuerda ejecutar npm install para luego ejecutar la App
-Clona el repositorio
-```plain
-git clone https://github.com/HelloStan13/Front_Crud-refactoring.git
-```
+
 
 ## con ❤️ por  [Adryan Ynfante](https://github.com/HelloStan13)🍿
