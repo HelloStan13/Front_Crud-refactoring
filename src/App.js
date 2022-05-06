@@ -9,6 +9,7 @@ function App() {
   return <StoreProvider>
     <br/>
     <div className="container border border-dark" style={{padding: '2%'}}> 
+      <br/>
       <Form_Group />
       <br/>
       <ListGroup />
