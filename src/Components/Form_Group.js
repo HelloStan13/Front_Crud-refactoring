@@ -65,7 +65,7 @@ export default function FormList() {
         <form className="container">
             <img src="https://webassets.mongodb.com/_com_assets/cms/logo_baja-9r83aqmpo0.png" alt="Sofka" className='center'/>
             <br></br>
-            <h2 className='center'>Gestión de Proyectos</h2>
+            <h1>Gestión de Proyectos</h1>
             <br></br>
           <div className="row">
             <input

@@ -9,6 +9,7 @@ body{
     color: black;
     margin: 0;
     margin-bottom: 20px;
+    font-size: 18px;
 
 }
 
@@ -26,7 +27,7 @@ button {
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     transition: all 250ms;
     overflow: hidden;
-    font-size: 20px;
+    font-size: 18px;
    }
    
    button::before {
@@ -39,7 +40,7 @@ button {
     -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     transition: all 250ms;
-    font-size: 20px;
+    font-size: 18px;
    }
    
    button:hover {
@@ -49,22 +50,17 @@ button {
    button:hover::before {
     width: 100%;
    }
-   table{
-       background-color: #ffffff;
-       opacity: 0.7;
-       font-size: 18px;
-   }
+table{
+    background-color: #ffffff;
+    opacity: 0.7;
+    font-size: 18px;
+}
 
-   .center {
+  .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
-  }
-
-  h2{
-    color: #1c1106;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 200px;
   }
 
   .footer{
@@ -74,4 +70,35 @@ button {
     color: white;
     text-align: center;
     bottom: 0;
+  }
+
+
+  h1 {
+    cursor: default;
+    position: block;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    margin: auto;
+    display: block;
+    
+    -webkit-animation: bounce .3s ease infinite alternate;
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    color: rgb(34, 16, 6);
+    text-align: center;
+    line-height: 40px;
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 transparent,
+                 0 7px 0 transparent,
+                 0 8px 0 transparent,
+                 0 9px 0 transparent,
+                 0 10px 10px rgba(182, 73, 10, 0.6);
   }

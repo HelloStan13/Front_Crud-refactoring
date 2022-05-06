@@ -26,9 +26,9 @@ export default function ListGroup() {
       <div>
         {currentGroupList.map((groupList) => {
           return (
-            <div key={groupList.id} className="border border-warning" style={{margin: '2%', padding:'2%'}}>
+            <div key={groupList.id} className="border border-dark" style={{margin: '2%', padding:'2%'}}>
               <div>{groupList.name === null ? '' : groupList.name.toUpperCase() }
-              <button className="btn btn-outline-danger btn-sm ml-3" onClick={() => onDelete(groupList.id)}>
+              <button className="btn btn-danger btn-sm ml-3" onClick={() => onDelete(groupList.id)}>
                   Eliminar tarea principal
               </button>
               </div>
