@@ -22,7 +22,7 @@ git clone https://github.com/HelloStan13/BackEnd_Crud-refactoring.git
 https://user-images.githubusercontent.com/92740455/167166122-0ee63772-8d8a-40fd-9b8c-1f8a6c6f7125.mp4
 
 ### Front de App
-![react 1](https://user-images.githubusercontent.com/92740455/167209248-f5acba41-7c9c-44a6-b9ad-82b88657dd5f.jpg)
+![react 2](https://user-images.githubusercontent.com/92740455/167209379-9acf1b3e-fc28-4bf8-b49a-492109c2d3f8.jpg)
 
 ### Creación de proyecto (TodoGroup)
 ![react 2](https://user-images.githubusercontent.com/92740455/167170200-d2f3fba1-04e2-45b3-8016-e4606ca96ac7.jpg)
