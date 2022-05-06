@@ -46,6 +46,6 @@ https://user-images.githubusercontent.com/92740455/167166122-0ee63772-8d8a-40fd-
 #### Recuerda ejecutar npm install para luego ejecutar la App
 
 ## Video Explicación 
-https://www.loom.com/share/834db69d821d4d888a1df052213b38a3
+[VIDEO] (https://www.loom.com/share/834db69d821d4d888a1df052213b38a3)
 
 ## con ❤️ por  [Adryan Ynfante](https://github.com/HelloStan13)🍿
