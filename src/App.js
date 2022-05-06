@@ -5,6 +5,13 @@ import Form_Group from './Components/Form_Group';
 import ListGroup from './Components/ListGroup';
 import Footer from './Components/footer';
 
+/*
+* 
+* @autor Adryan Ynfante <adryanynfante@gmail.com>
+* Se muestran componentes creados
+*
+*/
+
 function App() {
   return <StoreProvider>
     <br/>

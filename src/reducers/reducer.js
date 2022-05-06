@@ -1,3 +1,9 @@
+/*
+* 
+* @autor Adryan Ynfante <adryanynfante@gmail.com>
+* creacion de casos CRUD, edit, Add, delete tanto para grupo como para tareas.
+*
+*/
 export const reducer = (state, action) => {
     switch (action.type) {
       case 'update-item':

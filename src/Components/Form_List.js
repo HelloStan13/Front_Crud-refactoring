@@ -2,14 +2,24 @@ import React, { useContext,  useRef, useState } from 'react';
 import  { Store } from '../store';
 import api from '../API/api';
 
-
+/*
+* 
+* @autor Adryan Ynfante <adryanynfante@gmail.com>
+* creacion de todo para las tareas
+* 
+*/
 export default function Form(props) {
     const form = useRef(null);
     const { dispatch, state: { todo } } = useContext(Store);
     const item = todo.item;
     const [state, setState] = useState(item);
     const { group } = props;
-
+/*
+* 
+* @autor Adryan Ynfante <adryanynfante@gmail.com>
+* add tareas, name y se crea con las condiciones de completado
+* 
+*/
     const onAdd = async (event) => {
 
         const request = {
@@ -29,7 +39,12 @@ export default function Form(props) {
         console.log(error)
       }
     }
-  
+ /*
+* 
+* @autor Adryan Ynfante <adryanynfante@gmail.com>
+* funcion para editar tareas
+* 
+*/ 
     const onEdit = async (event) => {
       
       const request = {
@@ -48,8 +63,13 @@ export default function Form(props) {
             console.log(error);
           }    
     }
-         
 
+/*
+* 
+* @autor Adryan Ynfante <adryanynfante@gmail.com>
+* se retorna el input para solicitar la creacion de tareas y botones para el grupo proyecto
+* 
+*/
     return (
         <form className="container">
           <div className="row">

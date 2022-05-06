@@ -2,6 +2,13 @@ import React, { useContext, useEffect } from 'react';
 import  { Store } from '../store';
 import api from '../API/api';
 
+/*
+* 
+* @autor Adryan Ynfante <adryanynfante@gmail.com>
+* funciones para listar todo, editar y add todos(tareas de los proyectos)
+* 
+*/
+
 const ListTodo = (props) => {
   const { group } = props;
   const { dispatch, state: { todo } } = useContext(Store);

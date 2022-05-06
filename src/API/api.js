@@ -1,3 +1,8 @@
+/*
+* @version 2.0
+*@autor Adryan Ynfante <adryanynfante@gmail.com>
+* Api, se realiza cons para el endpoint de api tanto de las tareas como grupos
+*/
 const HOST_API = "http://localhost:9095/api";
 
 async function callApi(endpoint, options = {}) {

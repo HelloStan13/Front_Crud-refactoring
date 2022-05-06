@@ -2,14 +2,26 @@ import React, { useContext,  useRef, useState } from 'react';
 import  { Store } from '../store';
 import api from '../API/api';
 
-
+/*
+* 
+*@autor Adryan Ynfante <adryanynfante@gmail.com>
+* se relaiza función para crear grupo de tareas,
+* 
+*/
 
 export default function FormList() {
     const form = useRef(null);
     const { dispatch, state: { groupList } } = useContext(Store);
     const item = groupList.item;
     const [state, setState] = useState(item);
-  
+
+/*
+* 
+* @autor Adryan Ynfante <adryanynfante@gmail.com>
+* se añade add para agregar el grupo de tareas
+* 
+*/
+
     const onAdd = async (event) => {
       const nombre = document.getElementById("name");
       /*Validación para nombre de proyecto*/
@@ -60,7 +72,12 @@ export default function FormList() {
     }
 
 
-
+/*
+* 
+* @autor Adryan Ynfante <adryanynfante@gmail.com>
+* se retorna el input para solicitar información y botones donde  se añade grupo
+* 
+*/
     return (
         <form className="container">
             <img src="https://webassets.mongodb.com/_com_assets/cms/logo_baja-9r83aqmpo0.png" alt="Sofka" className='center'/>
