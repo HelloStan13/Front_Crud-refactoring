@@ -3,6 +3,7 @@ import React from 'react';
 import StoreProvider from './store';
 import FormList from './Components/FormList';
 import ListGroup from './Components/ListGroup';
+import Footer from './Components/footer';
 
 function App() {
   return <StoreProvider>
@@ -12,7 +13,9 @@ function App() {
       <br/>
       <ListGroup />
     </div>
+    <Footer />
   </StoreProvider>
+ 
 }
 
 export default App;
