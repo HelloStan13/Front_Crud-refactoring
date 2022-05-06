@@ -62,8 +62,11 @@ const ListTodo = (props) => {
             
             <td>{todo.name}</td>
             <td>
-              <input type="checkbox" id='decoration' defaultChecked={todo.completed} onChange={(event) => onChange(event, todo)}>
+            <label class="switch">
+              <input type="checkbox" className='switch' id='decoration' defaultChecked={todo.completed} onChange={(event) => onChange(event, todo)}>
               </input>
+              <span class="slider"></span>
+            </label>
             </td>
             <td>
               <button className="btn btn-danger btn-sm" onClick={() => onDelete(todo.id)}>
