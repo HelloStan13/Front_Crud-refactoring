@@ -62,7 +62,7 @@ const ListTodo = (props) => {
             <td>{todo.id}</td>
             <td>{todo.name}</td>
             <td>
-              <input type="checkbox" defaultChecked={todo.completed} onChange={(event) => onChange(event, todo)}>
+              <input type="checkbox" id='decoration' defaultChecked={todo.completed} onChange={(event) => onChange(event, todo)}>
               </input>
             </td>
             <td>

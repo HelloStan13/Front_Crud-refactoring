@@ -1,7 +1,8 @@
 body{
-background: #abbaab;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ffffff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f59d19, #fcdbd0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f58b19, #ffd2a4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 
 }
 
@@ -11,7 +12,7 @@ button {
     border-radius: 15px;
     color: #212121;
     z-index: 1;
-    background: #e8e8e8;
+    background: #fff0f0;
     position: relative;
     font-weight: 1000;
     font-size: 17px;
@@ -40,3 +41,14 @@ button {
    button:hover::before {
     width: 100%;
    }
+   table{
+       background-color: #ffffff;
+       opacity: 0.7;
+   }
+
+   .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }

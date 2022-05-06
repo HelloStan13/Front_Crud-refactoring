@@ -49,6 +49,8 @@ export default function FormList() {
   
     return (
         <form ref={formRef} className="container">
+            <img src="https://webassets.mongodb.com/_com_assets/cms/logo_baja-9r83aqmpo0.png" alt="Sofka" class="center"/>
+            <br></br>
           <div className="row">
             <input
                   className="form-control col-10"
