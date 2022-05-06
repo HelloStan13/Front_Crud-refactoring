@@ -18,8 +18,6 @@ git clone https://github.com/HelloStan13/BackEnd_Crud-refactoring.git
 - Bootstrap
 - Spring Boot App / Intellij
 
-## Funcionamiento
-https://user-images.githubusercontent.com/92740455/167166122-0ee63772-8d8a-40fd-9b8c-1f8a6c6f7125.mp4
 
 ### Front de App
 ![react 2](https://user-images.githubusercontent.com/92740455/167209379-9acf1b3e-fc28-4bf8-b49a-492109c2d3f8.jpg)
