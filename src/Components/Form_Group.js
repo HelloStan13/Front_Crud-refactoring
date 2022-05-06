@@ -79,6 +79,7 @@ export default function FormList() {
                   onChange={(event) => {
                   setState({ ...state, name: event.target.value })
                   }} ></input>
+                  <br></br>
             {item.id && <button className='btn btn-primary' onClick={() => { onEdit();  }}>Actualizar</button>}
             {!item.id && 
               <button className="btn btn-success btn-sm col-2" onClick={() => { onAdd();  }}>

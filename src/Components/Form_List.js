@@ -11,13 +11,6 @@ export default function Form(props) {
     const { group } = props;
 
     const onAdd = async (event) => {
-      const nombreTarea = document.getElementById("tarea");
-      /*Validación para nombres de tareas*/
-        if(!nombreTarea.value)
-      {
-        nombreTarea.focus();
-        return false;
-      }else if(nombreTarea.value){
 
         const request = {
         name: state.name,
@@ -36,18 +29,9 @@ export default function Form(props) {
         console.log(error)
       }
     }
-    return true;
-  }
   
     const onEdit = async (event) => {
-      const nombreTarea = document.getElementById("tarea");
-      /*Validación para nombre de proyecto*/
-      if(!nombreTarea.value)
-    {
-      nombreTarea.focus();
-      return false;
-    }else if(nombreTarea.value){
-
+      
       const request = {
         name: state.name,
         id: item.id,
@@ -63,9 +47,8 @@ export default function Form(props) {
         } catch(error) {
             console.log(error);
           }    
-        }
-          return true;
-        } 
+    }
+         
 
     return (
         <form className="container">
@@ -80,6 +63,7 @@ export default function Form(props) {
                   onChange={(event) => {
                     setState({ ...state, name: event.target.value })
                   }} ></input>
+                  <br></br>
             {item.id && item.groupListId === group && 
               <button className="btn btn-warning btn-sm col-2"  onClick={onEdit}>
                 Actualizar tarea
@@ -90,6 +74,7 @@ export default function Form(props) {
                 Crear tarea
               </button>
             }
+            <br></br>
             {!item.id && <button id="btn" className="btn btn-success btn-sm col-2" onClick={onAdd}>
               Crear tarea
               </button>

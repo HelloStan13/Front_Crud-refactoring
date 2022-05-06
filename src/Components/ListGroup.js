@@ -32,8 +32,9 @@ export default function ListGroup() {
                   Eliminar tarea principal
               </button>
               </div>
-              <br/>
+              <br></br>
               <Form group={groupList.id}/>
+              <br></br>
               <ListTodo group={groupList.id} />
             </div>
           )
