@@ -3,6 +3,7 @@ import  { Store } from '../store';
 import api from '../API/api';
 
 
+
 export default function FormList() {
     const formRef = useRef(null);
     const { dispatch, state: { groupList } } = useContext(Store);
@@ -46,7 +47,17 @@ export default function FormList() {
             console.log(error);
         }
     }
-  
+    
+    // const validateField = field => {
+    //   const errors = {};
+    //     if (field.value === '') {
+    //       errors[field.name] = field.emptyValue
+    //     } else if (field.value.length < field.min) {
+    //       errors[field.name] = field.shortValue || `Debe tener un mínimo de ${field.min} cáracteres`
+    //     }
+    //   }
+
+
     return (
         <form ref={formRef} className="container">
             <img src="https://webassets.mongodb.com/_com_assets/cms/logo_baja-9r83aqmpo0.png" alt="Sofka" class="center"/>
@@ -59,6 +70,7 @@ export default function FormList() {
                   type="text"
                   name="name"
                   placeholder="Nombre de proyecto"
+                  required
                   defaultValue={item.name}
                   onChange={(event) => {
                   setState({ ...state, name: event.target.value })
