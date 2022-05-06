@@ -1,4 +1,4 @@
-# -------------------Front Crud refactoring---------------------
+# -------------------Front Crud refactoring-------------------
 ## Crud Kata (Proyectos y Tareas)
 
 ## Clona
