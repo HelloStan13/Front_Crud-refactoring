@@ -69,7 +69,6 @@ const ListTodo = (props) => {
               <button className="btn btn-danger btn-sm" onClick={() => onDelete(todo.id)}>
                 Eliminar
               </button>
-            
               <button className="btn btn-warning btn-sm " onClick={() => onEdit(todo)}>
                 Editar
               </button>
