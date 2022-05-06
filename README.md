@@ -43,7 +43,9 @@ https://user-images.githubusercontent.com/92740455/167166122-0ee63772-8d8a-40fd-
 ### Creación de Segundo proyecto
 ![react 4](https://user-images.githubusercontent.com/92740455/167170297-9b678c58-643c-4c1b-ba22-495a833e38a6.jpg)
 
-### Recuerda ejecutar npm install para luego ejecutar la App
+#### Recuerda ejecutar npm install para luego ejecutar la App
 
+## Video Explicación 
+https://www.loom.com/share/834db69d821d4d888a1df052213b38a3
 
 ## con ❤️ por  [Adryan Ynfante](https://github.com/HelloStan13)🍿
